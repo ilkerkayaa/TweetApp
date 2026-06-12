@@ -10,4 +10,5 @@ urlpatterns = [
     #path("addtweetbyform/", views.addtweetbyform, name="addtweetbyform"), 127.0.0.1/tweetapp/addtweetbyform/
     #path("addtweetbymodelform/", views.addtweetbymodelform, name="addtweetbymodelform"), 127.0.0.1/tweetapp/addtweetbymodelform/
     path("signup/", views.SignupView.as_view(), name ="signup"),
+    path("deletetweet/<int:id>", views.deletetweet, name="deletetweet")
 ]
