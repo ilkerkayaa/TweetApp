@@ -23,14 +23,16 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'tweetapp:addtweet'%}">Add Tweet</a>
             </li>
-            <!--
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'tweetapp:addtweetbyform'%}">Add Tweet by Form</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link" href="{% url 'tweetapp:addtweetbymodelform'%}">Add Tweet by Model Form</a>
-            </li>
-            -->
+            {% comment %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'tweetapp:addtweetbyform'%}">Add Tweet by Form</a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'tweetapp:addtweetbymodelform'%}">Add Tweet by Model Form</a>
+              </li>
+            {% endcomment %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'login'%}">Login</a>
             </li>
